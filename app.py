@@ -29,7 +29,7 @@ if 'chat_session' not in st.session_state:
 
 
 st.markdown(
-    "<h1 style='text-align: left; font-size: 37px;'>🤖 Gemini Chatbot</h1>",
+    "<h1 style='text-align: left; font-size: 35px;'>🤖 Gemini Chatbot</h1>",
     unsafe_allow_html=True
 )
 
