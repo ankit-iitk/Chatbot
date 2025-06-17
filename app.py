@@ -28,6 +28,11 @@ if 'chat_session' not in st.session_state:
 
 st.title('🤖 Gemini Chatbot')
 
+st.markdown(
+    "<h1 style='text-align: center; font-size: 26px;'>🤖 Gemini Chatbot</h1>",
+    unsafe_allow_html=True
+)
+
 for message in st.session_state.chat_session.history:
     with st.chat_message(translate_role_for_streamlit(message.role)):
         st.markdown(message.parts[0].text)
